@@ -6,9 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # To use Pigweed, you must have a Git submodule or a copy of the Pigweed
 # repository. This CMake project is configured to use a Git submodule.
-if(NOT PW_ROOT)
-  set(PW_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/pigweed")
-endif()
+set(PW_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/pigweed")
 
 set(pigweed_SOURCE_DIR "${PW_ROOT}")
 set(pigweed_BINARY_DIR "${CMAKE_BINARY_DIR}/pigweed")
