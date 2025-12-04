@@ -1,0 +1,3 @@
+[submodule "pigweed"]
+	path = pigweed
+	url = https://github.com/google/pigweed.git

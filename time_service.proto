@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package rpc_sample;
+
+message TimeRequest {}
+
+message TimeResponse {
+  int64 timestamp = 1;
+}
+
+service TimeService {
+  rpc GetTime(TimeRequest) returns (TimeResponse);
+}
